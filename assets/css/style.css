@@ -89,6 +89,7 @@ nav a {
 
 .card:hover {
     transform: rotate(0deg) scale(1.05);
+    cursor: pointer;
 }
 
 /* Responsivo */
