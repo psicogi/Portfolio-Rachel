@@ -52,6 +52,14 @@ nav a {
     font-weight: bold;
 }
 
+#identidades {
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 20px;
+    font-size: 1.2em;
+    padding: 20px;
+}
+
 .galeria {
     display: flex;
     flex-wrap: wrap;
@@ -81,6 +89,19 @@ nav a {
 
 .card:hover {
     transform: rotate(0deg) scale(1.05);
+}
+
+/* Responsivo */
+@media (max-width: 900px) {
+    .card {
+        width: calc(50% - 20px);
+    }
+}
+
+@media (max-width: 600px) {
+    .card {
+        width: 100%;
+    }
 }
 
 form {
