@@ -64,19 +64,19 @@ nav a {
     display: flex;
     flex-wrap: wrap;
     gap: 20px;
+    justify-content: flex-start;
 }
 
 .card {
     background: #fff;
     border: 2px solid #ffda77;
     border-radius: 8px;
-    width: calc(33% - 20px);
+    width: calc(33.333% - 14px);
     text-align: center;
     padding: 10px;
-    box-shadow: 2px 2px 5px rgba(0,0,0,0.1);
-    transform: rotate(-1.5deg);
+    transform: rotate(-2deg);
     transition: transform 0.2s;
-    margin: auto;
+    box-sizing: border-box;
 }
 
 .card img {
