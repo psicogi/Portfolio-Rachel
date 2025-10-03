@@ -1,0 +1,112 @@
+body {
+    margin: 0;
+    font-family: 'Patrick Hand', cursive;
+    background: repeating-linear-gradient(
+        white,
+        white 28px,
+        #d9e4f5 29px
+    );
+    background-attachment: fixed;
+    color: #333;
+}
+
+header {
+    text-align: center;
+    padding: 20px;
+    background: #fff5;
+    backdrop-filter: blur(5px);
+    top: 0;
+}
+
+header h1 {
+    font-size: 2em;
+}
+
+nav a {
+    margin: 0 10px;
+    text-decoration: none;
+    color: #444;
+}
+
+.bloco {
+    margin: 40px auto;
+    max-width: 800px;
+    background: #fffdfd;
+    padding: 20px;
+    border: 2px dashed #ff6961;
+    border-radius: 10px;
+    box-shadow: 3px 3px 8px rgba(0,0,0,0.1);
+    position: relative;
+}
+
+.bloco::before {
+    content: "⭐";
+    position: absolute;
+    top: -15px;
+    left: -15px;
+    font-size: 24px;
+}
+
+.destaque {
+    color: #ff4081;
+    font-weight: bold;
+}
+
+.galeria {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.card {
+    background: #fff;
+    border: 2px solid #ffda77;
+    border-radius: 8px;
+    width: calc(33% - 20px);
+    text-align: center;
+    padding: 10px;
+    box-shadow: 2px 2px 5px rgba(0,0,0,0.1);
+    transform: rotate(-1.5deg);
+    transition: transform 0.2s;
+    margin: auto;
+}
+
+.card img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    border-radius: 6px;
+}
+
+.card:hover {
+    transform: rotate(0deg) scale(1.05);
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    }
+
+form input, form textarea {
+    padding: 10px;
+    border: 2px solid #c1c1c1;
+    border-radius: 5px;
+    font-family: inherit;
+}
+
+form button {
+    background: #ffb347;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-family: inherit;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background: #fff5;
+}
